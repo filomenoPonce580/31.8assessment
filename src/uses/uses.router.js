@@ -1,9 +1,7 @@
 const router = require('express').Router({mergeParams: true});
-
 const controller = require('./uses.controller');
-
 const methodNotAllowed = require('../errors/methodNotAllowed');
-const urlsController = require('../urls/urls.controller');
+//const urlsController = require('../urls/urls.controller');
 
 router.route('/')
     .get(controller.list)
